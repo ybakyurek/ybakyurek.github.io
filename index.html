@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Graduation Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Hacettepe University Graduation Project</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#algorithms">Algorithms</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#future">Future Directions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<br><br>
+  <section id="about">
+      <div class="container">
+        <br>
+        <br>
+          <h2>ABOUT PROJECT</h2>
+
+          <h3>Project Information</h3>
+          <table>
+              <tr>
+                  <td><strong>Title</strong></td>
+                  <td>Comparison of Cryptographic Algorithms for IoT Devices</td>
+              </tr>
+              <tr>
+                 <td> </td>
+                 <td> </td>
+              </tr>
+              <tr>
+                  <td><strong>Supervisor</strong></td>
+                  <td>Prof. Dr. Suat ÖZDEMİR</td>
+              </tr>
+              <tr>
+                 <td> </td>
+                 <td> </td>
+              </tr>
+              <tr>
+                  <td><strong>Group Members</strong></td>
+                  <td>Batuhan Görkem BENZER, Yıldırım Bayazıt AKYÜREK</td>
+              </tr>
+          </table>
+        <h4>Project Details</h4>
+        <p>The importance of IoT devices in our interconnected world cannot be overstated. These devices play a crucial role in collecting and exchanging data, enabling smart systems and enhancing efficiency in various domains. However, due to their resource constraints and limited computing power, IoT devices are inherently more vulnerable to security threats, making data security a paramount concern.</p>
+<br>
+        <p>To ensure the integrity, confidentiality, and privacy of data transmitted and stored by IoT devices, the selection and implementation of robust security algorithms are of utmost importance. Cryptographic algorithms provide the necessary tools to safeguard data and communications in IoT environments. These algorithms enable encryption and decryption processes that protect sensitive information from unauthorized access and tampering.</p>
+<br>
+        <p>The performance evaluation of cryptographic algorithms is a key objective of our project. By assessing the performance metrics of these algorithms, such as execution time, memory usage, we aim to identify the most efficient solutions for resource-constrained IoT devices. This evaluation will enable us to strike a balance between data security and computational efficiency, ensuring that the chosen algorithms are both robust and suitable for the limitations of IoT devices. Ultimately, our project aims to contribute to the development of secure and efficient IoT systems. </p>
+      </div>
+  </section>
+
+  <section id="intro">
+  <div class="container">
+    <br>
+    <br>
+    <h2>Introduction & Problem Definition</h2><br>
+    <p>"Internet of Things", abbreviated as IoT, is a technology that enables devices used in daily life to transfer data with other devices through the internet and ensure that devices are fully synchronized with each other. The sectors where IoT devices are common are listed below:</p>
+<br>
+    <ul class="indented-list">
+      <li>Construction applications</li>
+      <li>Logistics applications</li>
+      <li>Smart city applications</li>
+      <li>Manufacturing applications</li>
+      <li>IT industry applications</li>
+      <li>Health apps</li>
+      <li>Trading apps</li>
+    </ul>
+    <br>
+    <p>According to Statista.com data, the number of IoT devices, which was 9.7 billion in 2020, is expected to increase 3 times in 10 years. According to International Data Corporation (IDC), it predicts that by 2025, the number of IoT devices connected to the Internet will reach approximately 40 billion, and that all devices connected to the Internet will generate approximately 80 billion zettabytes (ZB) of data. In the event that these expectations are realized, very different needs will arise.</p>
+    <figure>
+      <img src="img/Picture1.png" alt="Figure 1" class="resim">
+      <figcaption>Number of Internet of Things (IoT) connected devices (Holst, 2021).</figcaption>
+    </figure>
+    <br>
+    <p>As can be seen from the list above , IoT devices are used in many sectors. In this way, transactions that used to take a lot of time and cost in the past are performed cheaper and in a shorter time. However, some problems need to be resolved in order for these systems to survive and work stably.
+</p> <br>
+<p>The first of these problems is the computing and use of data. Since IoT devices are not powerful devices, their capacity to process the data they obtain is limited. Therefore, the collected data will need to be sent elsewhere. After the data is computing, the computed data must be sent again in order for that data to be used by another device.
+</p><br>
+<p>The second problem is security. IoT devices can be seen as a target, both hardware and software. We can classify cyber attack threats for IoT devices as follows.
+</p><br>
+<figure>
+  <img src="img/Picture2.png" alt="Figure 1" class="resim">
+  <figcaption>Cyber attack threats for IoT devices.</figcaption>
+</figure>
+<br>
+<p>One of the solutions against network usage and attacks mentioned above is to use a cryptography algorithm that is appropriate in terms of performance and security (Rana et al., 2022). Fast encryption and decryption of data will enable processes to be completed faster.
+</p><br>
+<p>Cryptography is being used to secure the authentication, confidentiality, data integrity and access control of networks. Cryptography is a must for the IoT ecosystem as so much information can be accessed through IoT devices.
+</p> <br>
+<p> <b>Limits of IoT Devices:</b></p>
+
+<br>
+<p>IoT devices face several inherent limitations that make them distinct from traditional computing systems. These limitations stem from factors such as limited processing power, memory capacity, energy resources, and communication bandwidth. Understanding these limitations is essential to design and implement effective security mechanisms for IoT environments.</p>
+<br>
+<ul class="indented-list">
+  <li>Computational Resources: IoT devices often possess limited processing capabilities, which restrict the complexity and computational overhead that encryption algorithms can introduce. The execution time of cryptographic operations should be optimized to minimize the impact on the device's overall performance.</li>
+<br>
+  <li>LIoT devices face several inherent limitations that make them distinct from traditional computing systems. These limitations stem from factors such as limited processing power, memory capacity, energy resources, and communication bandwidth. Understanding these limitations is essential to design and implement effective security mechanisms for IoT environments.</li>
+<br>
+  <li>Power Consumption: Energy efficiency is a critical concern for IoT devices, as they are often powered by batteries or rely on energy harvesting techniques. Encryption algorithms should be lightweight and power-efficient to ensure prolonged device operation and avoid draining the limited power resources.</li>
+</ul>
+<br>
+<p>We can classify the algorithms that we can use in our studies as follows:
+</p>
+
+    <ul class="indented-list">
+      <li>Symmetric cryptography
+</li>
+      <li>Asymmetric cryptography
+</li>
+      <li>Hybrid cryptography
+</li>
+      <li>Lightweight cryptography</li>
+    </ul>
+    <br>
+
+  </div>
+</section>
+
+<section id="algorithms">
+  <div class="container">
+    <br>
+    <br>
+    <h2>Algorithms & Test Environments</h2>
+
+
+<br>
+    <p>The algorithms we have decided to consider are listed below:</p>
+<br>
+    <ol class="indented-list">
+      <li>Cipher Block Chaining (CBC): CBC is a symmetric block cipher mode that adds an extra layer of security by chaining the ciphertext blocks together. It XORs each plaintext block with the previous ciphertext block before encryption, ensuring that identical plaintext blocks produce different ciphertext blocks. This makes it resistant to certain types of attacks.</li>
+<br>
+      <li>Output Feedback (OFB): OFB is a symmetric stream cipher mode that generates a keystream independent of the plaintext. It encrypts an initialization vector (IV) and uses the resulting ciphertext as the keystream. The keystream is XORed with the plaintext to produce the ciphertext. OFB is known for its error propagation properties and is resistant to bit flipping attacks.</li>
+<br>
+      <li>Rivest-Shamir-Adleman (RSA): RSA is an asymmetric encryption algorithm widely used for secure communication and digital signatures. It relies on the difficulty of factoring large prime numbers. RSA uses a public-private key pair, where the public key is used for encryption, and the private key is used for decryption and digital signing.</li>
+<br>
+      <li>Trivium: Trivium is a lightweight symmetric stream cipher known for its simplicity and high performance on hardware platforms. It utilizes three linear feedback shift registers (LFSRs) and a non-linear combining function to generate a keystream. The keystream is XORed with the plaintext to produce the ciphertext.</li>
+<br>
+      <li>Present: Present is a lightweight asymmetric block cipher designed for resource-constrained environments. It operates on small data blocks and uses a compact hardware implementation. Present offers a good balance between security and efficiency and is suitable for lightweight cryptographic operations.</li>
+<br>
+    </ol>
+    <p>These algorithms serve different cryptographic purposes and have distinct characteristics that make them suitable for various applications and environments.</p>
+<br>
+<p>We conducted our tests by including Raspberry Pi and various operating systems installed on Raspberry Pi. By incorporating Raspberry Pi into our testing setup, we were able to evaluate the performance and compatibility of the algorithms in real-world scenarios. Raspberry Pi, with its wide adoption in IoT applications, provided us with a representative platform to assess the algorithms' effectiveness in practical environments. The inclusion of different operating systems further allowed us to examine the algorithms' performance across diverse software configurations. By considering Raspberry Pi and its associated operating systems, our test setup aimed to provide insights into the algorithmic behavior and suitability for IoT devices.</p>
+<br>
+  <img src="img/Picture5.png" class="resim" >
+  <br>
+  <br>
+  <img src="img/Picture6.png" class="resim">
+<br>
+  <p>Below, you can see an example demonstration of the communication performance between a server and a client in terms of algorithms. In this setup, we utilized various cryptographic algorithms to secure the communication channel and evaluate their respective performances. The server and client established a connection, and data transmission took place over this secured channel.</p>
+</div>
+<br>
+<div class="logo-container">
+  <img src="img/Picture7.png" alt="Logo 1">
+  <img src="img/Picture8.webp" alt="Logo 2">
+  <img src="img/Picture9.png" alt="Logo 3">
+</div>
+
+    </div>
+</section>
+
+
+  <section id="results">
+    <div class="container">
+      <br>
+      <br>
+      <h2>Results</h2>
+      <br>
+      <p>In our test results, we observed that RSA exhibited the lowest performance among the tested algorithms, while the lightweight algorithms, specifically Trivium and Present, demonstrated the highest performance. Trivium and Present, which fall under the category of lightweight algorithms, outperformed the others in terms of efficiency and speed. These findings highlight the advantage of using lightweight cryptographic algorithms, such as Trivium and Present, in resource-constrained environments where performance optimization is crucial. By leveraging their optimized design and implementation, Trivium and Present offer superior performance and make them well-suited for applications requiring efficient and secure cryptographic operations.</p>
+      <br><figure>
+        <img src="img/Picture3.png" alt="Figure 1" class="resim">
+      </figure>
+      <p>RSA, when compared to Triple DES OFB, Triple DES CBC, and lightweight algorithms, took longer to execute due to several reasons:</p>
+      <br>
+      <ol class="indented-list">
+        <li>Asymmetric Encryption: RSA is an asymmetric encryption algorithm, which means it uses a public key for encryption and a private key for decryption. Asymmetric encryption algorithms generally perform slower than block cipher algorithms. Consequently, the execution time of RSA can be longer compared to other block cipher algorithms.</li>
+  <br>
+        <li>Key Length: RSA typically employs longer keys. Longer keys can enhance security, but encryption and decryption operations require more computational power. As the key length increases, the processing time also increases.</li>
+  <br>
+        <li>Modular Arithmetic Operations: RSA relies on modular arithmetic operations based on number theory. Performing arithmetic operations with large numbers can be more complex and slower.</li>
+  <br>
+          </ol>
+      <p>Lightweight algorithms are faster than Triple DES OFB and CBC due to several reasons. </p>
+      <br>
+      <ol class="indented-list">
+        <li>Simplified Design: Lightweight algorithms are specifically designed to have simpler and more streamlined designs compared to complex algorithms like Triple DES. They prioritize efficiency and speed by eliminating unnecessary operations and reducing computational overhead.</li>
+  <br>
+        <li>Reduced Key Sizes: Lightweight algorithms often use shorter key sizes compared to Triple DES. While shorter key sizes may result in lower security levels, they contribute to faster encryption and decryption operations. The reduced number of key bits decreases the computational load, leading to improved performance.</li>
+  <br>
+        <li>Efficient Implementation: Lightweight algorithms are optimized for resource-constrained devices and environments where computational power and memory capacity are limited. They often have efficient and compact implementations that make effective use of available resources. This optimization results in faster execution and lower memory requirements.</li>
+  <br>
+          </ol>
+
+          <br><figure>
+            <img src="img/Picture4.png" alt="Figure 1" class="resim">
+          </figure>
+  <br>
+  <p>When examining the file sizes, it was observed that the Present algorithm exhibited better performance in smaller files, while the Trivium algorithm showed better performance as the file size increased. Additionally, as the file size increased, algorithms other than lightweight algorithms took longer to yield results.</p>
+  <br>
+  <p>In addition, the Present algorithm, due to its lower memory usage, did not encounter the "out of memory" error as observed in the other algorithms when processing a 100MB file. This advantage can be attributed to several factors that were present in the algorithm's design.</p>
+  <br>
+
+    </div>
+  </section>
+
+  <section id="future">
+    <div class="container">
+      <br>
+      <br>
+      <h2>Future Directions</h2>
+      <br>
+      <p>In the next stage of our project, we aim to bridge this gap by establishing a network of IoT devices and investigating the impact of encryption algorithms on the network load. By deploying actual devices interconnected in a network, we can evaluate the performance of encryption algorithms in terms of latency, throughput, and overall network efficiency. This expanded scope will enable us to assess algorithmic behavior in a dynamic and distributed environment, capturing the influence of factors such as network congestion, device heterogeneity, and varying data traffic patterns.</p>
+      </div>
+
+
+  </section>
+
+
+  <section id="References">
+    <div class="container">
+      <br>
+      <br>
+      <h2>References</h2>
+      <br>
+<p>Holst, A. (2021). Number of IoT Connected Devices Worldwide 2019–2030. Statistica.</p>
+<p>Rana, M., Mamun, Q., & Islam, R. (2022). Lightweight cryptography in IoT networks: A survey. Future Generation Computer Systems, 129, 77-89.</p>
+
+
+      </div>
+      <br>
+      <br>  <br>
+        <br>  <br>
+          <br>  <br>
+            <br>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Hacettepe University. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
